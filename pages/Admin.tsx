@@ -113,17 +113,23 @@ const AdminPage: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="md:col-span-2">
                      <div className="flex items-center gap-6">
-                        <div className="h-20 w-20 rounded-2xl bg-slate-100 border border-slate-200 flex items-center justify-center text-2xl font-bold text-slate-400">US</div>
+                        <div className="h-20 w-20 rounded-2xl bg-gradient-to-br from-blue-600 to-cyan-500 border border-slate-200 flex items-center justify-center text-white shadow-md">
+                           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-10 w-10">
+                              <circle cx="12" cy="12" r="10"></circle>
+                              <line x1="2" y1="12" x2="22" y2="12"></line>
+                              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                           </svg>
+                        </div>
                         <div>
                            <Button variant="secondary" size="sm" className="mb-2">Upload Logo</Button>
                            <p className="text-xs text-slate-400">Recommended size: 512x512px (PNG, JPG)</p>
                         </div>
                      </div>
                   </div>
-                  <Input label="Store Name" defaultValue="UrbanShelf Inc." />
-                  <Input label="Support Email" type="email" defaultValue="support@urbanshelf.com" icon={<Mail className="h-4 w-4" />} />
+                  <Input label="Store Name" defaultValue="Demand Distribution" />
+                  <Input label="Support Email" type="email" defaultValue="support@demanddistribution.com" icon={<Mail className="h-4 w-4" />} />
                   <Input label="Phone Number" defaultValue="+1 (555) 000-0000" />
-                  <Input label="Website URL" defaultValue="https://urbanshelf.com" icon={<Globe className="h-4 w-4" />} />
+                  <Input label="Website URL" defaultValue="https://demanddistribution.com" icon={<Globe className="h-4 w-4" />} />
                 </div>
               </Card>
 

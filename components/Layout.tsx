@@ -81,13 +81,20 @@ export const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) =>
         ${sidebarOpen ? 'translate-x-0' : '-translate-x-full'}
       `}>
         {/* Logo */}
-        <div className="flex items-center h-16 flex-shrink-0 px-6 border-b border-slate-100">
-          <div className="flex items-center gap-2 font-bold text-xl text-indigo-900">
-            <div className="h-8 w-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white">
-              US
+        <div className="flex items-center h-20 flex-shrink-0 px-6 border-b border-slate-100">
+          <Link to="/" className="flex items-center gap-3 w-full group">
+            <div className="relative h-10 w-10 flex items-center justify-center bg-gradient-to-br from-blue-600 to-cyan-500 rounded-xl text-white shadow-sm shrink-0 group-hover:scale-105 transition-transform duration-300">
+               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+               </svg>
             </div>
-            UrbanShelf
-          </div>
+            <div className="flex flex-col leading-none">
+               <span className="text-lg font-black text-slate-800 tracking-tight">DEMAND</span>
+               <span className="text-[9px] font-bold text-blue-600 tracking-[0.2em] uppercase mt-0.5">Distribution</span>
+            </div>
+          </Link>
           <button 
             className="ml-auto lg:hidden text-slate-500"
             onClick={() => setSidebarOpen(false)}

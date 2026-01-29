@@ -90,10 +90,10 @@ export const CATEGORIES: Category[] = [
 ];
 
 export const USERS: User[] = [
-  { id: 'U001', name: 'John Doe', email: 'john@urbanshelf.com', role: 'Admin', status: 'Active' },
-  { id: 'U002', name: 'Jane Smith', email: 'jane@urbanshelf.com', role: 'Manager', status: 'Active' },
+  { id: 'U001', name: 'John Doe', email: 'john@demanddistribution.com', role: 'Admin', status: 'Active' },
+  { id: 'U002', name: 'Jane Smith', email: 'jane@demanddistribution.com', role: 'Manager', status: 'Active' },
   { id: 'U003', name: 'Bob Johnson', email: 'bob@external.com', role: 'Viewer', status: 'Suspended' },
-  { id: 'U004', name: 'Alice Williams', email: 'alice@urbanshelf.com', role: 'Manager', status: 'Active' },
+  { id: 'U004', name: 'Alice Williams', email: 'alice@demanddistribution.com', role: 'Manager', status: 'Active' },
 ];
 
 export const PRICING_STRATEGIES: PricingStrategy[] = [
